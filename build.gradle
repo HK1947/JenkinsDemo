@@ -1,0 +1,58 @@
+apply plugin: 'application'
+
+application {
+    mainClassName = 'demo.GradleDemo'
+}
+
+
+
+
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+
+dependencies {
+
+    implementation 'org.seleniumhq.selenium:selenium-java:4.20.0'
+
+
+}
+
+
+buildscript {
+
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+}
+
+
+
+
+
+task harsha(){
+    description = 'This is selenium tasks'
+    doFirst{
+        println "Hello welcome to Demo gradle class"
+    }
+    doLast{
+        println "Thank You Bye Bye."
+    }
+}
+
+jar {
+
+    manifest {
+
+        attributes  'Main-Class':mainClassName
+
+    }
+
+}
