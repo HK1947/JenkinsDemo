@@ -10,6 +10,7 @@ public class GradleDemo {
         String textInBold = "Java_Prof_Level";
         System.out.print("This is for checking polling of job");
         System.out.printf("Job is been completed");
+        System.out.print(" ");
 
         String str= "Harsha", nstr="";
         char ch;
